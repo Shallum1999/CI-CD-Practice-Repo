@@ -4,8 +4,9 @@ pipeline {
     triggers {
         cron('H */4 * * 1-5')
     }
-    triggers { pollSCM('H */4 * * 1-5') }
-
+    triggers { 
+        pollSCM('H */4 * * 1-5') 
+    }
     stages {
         stage('Compile') {
             steps {
