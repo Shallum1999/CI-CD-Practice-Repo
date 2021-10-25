@@ -1,0 +1,106 @@
+mongo -u mongoAdmin -p --authenticationDatabase admin
+
+mongo
+use admin
+show users
+
+
+
+
+
+
+
+
+
+
+
+
+
+admin : mongoAdmin
+passwd : changeMe
+
+mongo "mongodb+srv://cluster0.5zogg.mongodb.net/shallum" --username shallum
+
+
+to connect cluster0 :  mongo "mongodb+srv://cluster0.jy6e1.mongodb.net/admin" --username shallum
+pass: shallum_99OK
+use shallum;
+
+
+
+for jenkins:
+
+sudo docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts-jdk11
+
+85f2ec29ec624db680114ba06e864675
+
+This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Jenkinsfile
+
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Compile') {
+            steps {
+                echo 'Python Compile'
+            }
+        }
+        stage('Unit test'){
+        	steps{
+        		sh "python test.py"
+        	}
+        
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To enter image and install packages:
+
+sudo docker exec -u root -it 9cf9232d4e47 sh
+
+Create a build when you checkin code and a nightly build 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
